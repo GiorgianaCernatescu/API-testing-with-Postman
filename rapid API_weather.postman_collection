@@ -1,0 +1,135 @@
+{
+	"info": {
+		"_postman_id": "1bbb0950-9ac5-4be1-9c08-0efb4c5836a0",
+		"name": "vremea",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28599519"
+	},
+	"item": [
+		{
+			"name": "severe weather",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "1890af3784msh65fe439569c68ddp16b63cjsn92f3ee652069",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "X-RapidAPI-Key",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://weatherbit-v1-mashape.p.rapidapi.com/alerts?lat=47&lon=27",
+					"protocol": "https",
+					"host": [
+						"weatherbit-v1-mashape",
+						"p",
+						"rapidapi",
+						"com"
+					],
+					"path": [
+						"alerts"
+					],
+					"query": [
+						{
+							"key": "lat",
+							"value": "47"
+						},
+						{
+							"key": "lon",
+							"value": "27"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "16 days forecast",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "1890af3784msh65fe439569c68ddp16b63cjsn92f3ee652069",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "X-RapidAPI-Key",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://weatherbit-v1-mashape.p.rapidapi.com/forecast/daily?lat=47&lon=27",
+					"protocol": "https",
+					"host": [
+						"weatherbit-v1-mashape",
+						"p",
+						"rapidapi",
+						"com"
+					],
+					"path": [
+						"forecast",
+						"daily"
+					],
+					"query": [
+						{
+							"key": "lat",
+							"value": "47"
+						},
+						{
+							"key": "lon",
+							"value": "27"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
