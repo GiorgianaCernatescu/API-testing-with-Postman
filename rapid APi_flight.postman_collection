@@ -1,0 +1,182 @@
+{
+	"info": {
+		"_postman_id": "f20134f2-4e0e-4c06-839e-6413bd0fac59",
+		"name": "flight",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28599519"
+	},
+	"item": [
+		{
+			"name": "flights",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "1890af3784msh65fe439569c68ddp16b63cjsn92f3ee652069",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "X-RapidAPI-Key",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://flight-data4.p.rapidapi.com/get_airline_flights?airline=SIA",
+					"protocol": "https",
+					"host": [
+						"flight-data4",
+						"p",
+						"rapidapi",
+						"com"
+					],
+					"path": [
+						"get_airline_flights"
+					],
+					"query": [
+						{
+							"key": "airline",
+							"value": "SIA"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "aircraft photo",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "1890af3784msh65fe439569c68ddp16b63cjsn92f3ee652069",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "X-RapidAPI-Key",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://flight-data4.p.rapidapi.com/get_aircraft_photo?image=B-5978-1596141072-2.jpg",
+					"protocol": "https",
+					"host": [
+						"flight-data4",
+						"p",
+						"rapidapi",
+						"com"
+					],
+					"path": [
+						"get_aircraft_photo"
+					],
+					"query": [
+						{
+							"key": "image",
+							"value": "B-5978-1596141072-2.jpg"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Flights In Area",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "1890af3784msh65fe439569c68ddp16b63cjsn92f3ee652069",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "X-RapidAPI-Key",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://flight-data4.p.rapidapi.com/get_area_flights?latitude=1.367540&longitude=103.816089",
+					"protocol": "https",
+					"host": [
+						"flight-data4",
+						"p",
+						"rapidapi",
+						"com"
+					],
+					"path": [
+						"get_area_flights"
+					],
+					"query": [
+						{
+							"key": "latitude",
+							"value": "1.367540"
+						},
+						{
+							"key": "longitude",
+							"value": "103.816089"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Flight Info",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "1890af3784msh65fe439569c68ddp16b63cjsn92f3ee652069",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "X-RapidAPI-Key",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://flight-data4.p.rapidapi.com/get_flight_info?flight=SQ655",
+					"protocol": "https",
+					"host": [
+						"flight-data4",
+						"p",
+						"rapidapi",
+						"com"
+					],
+					"path": [
+						"get_flight_info"
+					],
+					"query": [
+						{
+							"key": "flight",
+							"value": "SQ655"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
