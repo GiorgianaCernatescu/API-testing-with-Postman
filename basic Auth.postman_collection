@@ -1,0 +1,209 @@
+{
+	"info": {
+		"_postman_id": "07d527c2-2a6b-4819-9b58-4bab8a654469",
+		"name": "Auth",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28599519"
+	},
+	"item": [
+		{
+			"name": "basic Auth",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "password",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "postman",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://postman-echo.com/basic-auth",
+					"protocol": "https",
+					"host": [
+						"postman-echo",
+						"com"
+					],
+					"path": [
+						"basic-auth"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "hawk auth",
+			"request": {
+				"auth": {
+					"type": "hawk",
+					"hawk": [
+						{
+							"key": "authKey",
+							"value": "werxhqb98rpaxn39848xrunpaw3489ruxnpa98w4rxn",
+							"type": "string"
+						},
+						{
+							"key": "authId",
+							"value": "dh37fgj492je",
+							"type": "string"
+						},
+						{
+							"key": "algorithm",
+							"value": "sha256",
+							"type": "string"
+						},
+						{
+							"key": "user",
+							"value": "",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://postman-echo.com/auth/hawk",
+					"protocol": "https",
+					"host": [
+						"postman-echo",
+						"com"
+					],
+					"path": [
+						"auth",
+						"hawk"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "oauth1",
+			"request": {
+				"auth": {
+					"type": "oauth1",
+					"oauth1": [
+						{
+							"key": "consumerSecret",
+							"value": "D+EdQ-gs$-%@2Nu7",
+							"type": "string"
+						},
+						{
+							"key": "consumerKey",
+							"value": "RKCGzna7bv9YD57c",
+							"type": "string"
+						},
+						{
+							"key": "callback",
+							"value": "",
+							"type": "string"
+						},
+						{
+							"key": "addEmptyParamsToSign",
+							"value": false,
+							"type": "boolean"
+						},
+						{
+							"key": "tokenSecret",
+							"value": "",
+							"type": "string"
+						},
+						{
+							"key": "token",
+							"value": "",
+							"type": "string"
+						},
+						{
+							"key": "signatureMethod",
+							"value": "HMAC-SHA1",
+							"type": "string"
+						},
+						{
+							"key": "version",
+							"value": "1.0",
+							"type": "string"
+						},
+						{
+							"key": "addParamsToHeader",
+							"value": false,
+							"type": "boolean"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://postman-echo.com/oauth1",
+					"protocol": "https",
+					"host": [
+						"postman-echo",
+						"com"
+					],
+					"path": [
+						"oauth1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "weather",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "key",
+							"value": "X-RapidAPI-Key",
+							"type": "string"
+						},
+						{
+							"key": "value",
+							"value": "78ebee33f1mshe78983d6de1c693p1f21e0jsn955b66acdf84",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://weatherbit-v1-mashape.p.rapidapi.com/current?lon=27.40&lat=47.19",
+					"protocol": "https",
+					"host": [
+						"weatherbit-v1-mashape",
+						"p",
+						"rapidapi",
+						"com"
+					],
+					"path": [
+						"current"
+					],
+					"query": [
+						{
+							"key": "lon",
+							"value": "27.40"
+						},
+						{
+							"key": "lat",
+							"value": "47.19"
+						},
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
